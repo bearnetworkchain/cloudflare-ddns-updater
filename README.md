@@ -1,35 +1,35 @@
 # Cloudflare Dynamic DNS IP Updater
-<img alt="GitHub" src="https://img.shields.io/github/license/K0p1-Git/cloudflare-ddns-updater?color=black"> <img alt="GitHub last commit (branch)" src="https://img.shields.io/github/last-commit/K0p1-Git/cloudflare-ddns-updater/main"> <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/K0p1-Git/cloudflare-ddns-updater">
 
-This script is used to update Dynamic DNS (DDNS) service based on Cloudflare! Access your home network remotely via a custom domain name without a static IP! Written in pure BASH.
+
+此腳本用於更新基於 Cloudflare 的動態DNS (DDNS)服務！ 通過自定義域名遠程訪問您的網站，無需固定IP！ 用純 BASH 編寫。
+
+出處來源為 : https://github.com/K0p1-Git
 
 
 ## Installation
 
 ```bash
-[git clone https://github.com/K0p1-Git/cloudflare-ddns-updater.git]
+git clone https://github.com/bearnetworkchain/cloudflare-ddns-updater.git
 ```
 
 ## Usage
-This script is used with crontab. Specify the frequency of execution through crontab.
+此腳本與 crontab 一起使用。 通過 crontab 指定執行頻率。
 
 ```bash
-# ┌───────────── minute (0 - 59)
-# │ ┌───────────── hour (0 - 23)
-# │ │ ┌───────────── day of the month (1 - 31)
-# │ │ │ ┌───────────── month (1 - 12)
-# │ │ │ │ ┌───────────── day of the week (0 - 6) (Sunday to Saturday 7 is also Sunday on some systems)
-# │ │ │ │ │ ┌───────────── command to issue                               
+# ┌───────────── 分鐘 (0 - 59)
+# │ ┌───────────── 小時 (0 - 23)
+# │ │ ┌───────────── 一個月中的哪一天 (1 - 31)
+# │ │ │ ┌───────────── 月份 (1 - 12)
+# │ │ │ │ ┌───────────── 一星期中的哪一天 (0 - 6) (週六到週日 7 在某些系統上也是周日)
+# │ │ │ │ │ ┌───────────── 發出命令                              
 # │ │ │ │ │ │
 # │ │ │ │ │ │
 # * * * * * /bin/bash {Location of the script}
 ```
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Reference
-This script was made with reference from [Keld Norman](https://www.youtube.com/watch?v=vSIBkH7sxos) video.
+此腳本參考 [Keld Norman](https://www.youtube.com/watch?v=vSIBkH7sxos) 視頻製作。
 
 ## License
 [MIT](https://github.com/K0p1-Git/cloudflare-ddns-updater/blob/main/LICENSE)
