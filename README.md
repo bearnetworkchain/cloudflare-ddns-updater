@@ -7,7 +7,7 @@ This script is used to update Dynamic DNS (DDNS) service based on Cloudflare! Ac
 ## Installation
 
 ```bash
-git clone https://github.com/K0p1-Git/cloudflare-ddns-updater.git
+[git clone https://github.com/K0p1-Git/cloudflare-ddns-updater.git](https://github.com/bearnetworkchain/cloudflare-ddns-updater.git)](https://github.com/bearnetworkchain/cloudflare-ddns-updater.git)
 ```
 
 ## Usage
