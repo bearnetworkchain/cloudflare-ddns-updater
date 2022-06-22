@@ -6,14 +6,27 @@
 出處來源為 : https://github.com/K0p1-Git
 
 
-## Installation
+## 安裝
 
 ```bash
 git clone https://github.com/bearnetworkchain/cloudflare-ddns-updater.git
 ```
 
-## Usage
-此腳本與 crontab 一起使用。 通過 crontab 指定執行頻率。
+打開cloudflare-template.sh，對其參數進行設定
+
+```bash
+#auth_email=""                                       # 用於登錄的電子郵件'https://dash.cloudflare.com'
+#auth_method="Global"                                # 為 Global API Key 設置為 "global" 或為 Scoped API Token 設置為 "token"
+#auth_key=""                                         # 您的 API 令牌或全局 API 密鑰
+#zone_identifier=""                                  # API 區域識別碼
+#record_name=""                                      # IP更新同步的DNS: 這邊填入您的域名
+#ttl="3600"                                          # 設置DNS TTL（秒）
+#proxy="true"                                        # 設置端口為true或false
+```
+
+## 設定自動更新頻率
+
+此腳本與 crontab 一起使用，通過 crontab 指定執行頻率。
 
 我設15分鐘檢查一次
 
