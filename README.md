@@ -15,7 +15,16 @@ git clone https://github.com/bearnetworkchain/cloudflare-ddns-updater.git
 ## Usage
 此腳本與 crontab 一起使用。 通過 crontab 指定執行頻率。
 
+我設15分鐘檢查一次
+
+
 ```bash
+crontab -e
+ 
+*/15 * * * * /bin/bash /etc/cloudflare-bearnetwork.sh
+```  
+
+
 # ┌───────────── 分鐘 (0 - 59)
 # │ ┌───────────── 小時 (0 - 23)
 # │ │ ┌───────────── 一個月中的哪一天 (1 - 31)
@@ -25,7 +34,7 @@ git clone https://github.com/bearnetworkchain/cloudflare-ddns-updater.git
 # │ │ │ │ │ │
 # │ │ │ │ │ │
 # * * * * * /bin/bash {Location of the script}
-```
+
 
 
 ## Reference
