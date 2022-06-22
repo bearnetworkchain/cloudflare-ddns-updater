@@ -1,7 +1,9 @@
 # Cloudflare Dynamic DNS IP Updater
 
 
-此腳本用於更新基於 Cloudflare 的動態DNS (DDNS)服務！ 通過自定義域名遠程訪問您的網站，無需固定IP！ 
+此腳本用於更新基於 Cloudflare 的動態DNS (DDNS)服務！ 
+
+通過自定義域名遠程訪問您的網站，無需固定IP！ 
 
 用純 BASH 編寫。
 
