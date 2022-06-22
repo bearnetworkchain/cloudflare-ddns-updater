@@ -24,7 +24,7 @@ crontab -e
 */15 * * * * /bin/bash /etc/cloudflare-bearnetwork.sh
 ```  
 
-
+```bash
 # ┌───────────── 分鐘 (0 - 59)
 # │ ┌───────────── 小時 (0 - 23)
 # │ │ ┌───────────── 一個月中的哪一天 (1 - 31)
@@ -34,6 +34,7 @@ crontab -e
 # │ │ │ │ │ │
 # │ │ │ │ │ │
 # * * * * * /bin/bash {Location of the script}
+``` 
 
 
 
